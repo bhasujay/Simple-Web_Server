@@ -17,7 +17,7 @@ int server_socket;
 sockaddr_in server_addr;
 const char* sIP = std::getenv("MY_IP");
 const char* dPath = std::getenv("MY_PATH");
-const int PORT = 8080;
+const int PORT = std::getenv("MY_PORT");
 const int MAX_CONNECTIONS = 5;
 const int MAX_REQUESTS = 1000;
 const int TIMEOUT_SECONDS = 5;
